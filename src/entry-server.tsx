@@ -1,7 +1,7 @@
-import ReactDOMServer from "react-dom/server";
+import { CookiesProvider } from "react-cookie";
+import Router from "./router";
 import { StaticRouter } from "react-router-dom/server";
-
-import { Router } from "./router";
+import ReactDOMServer from "react-dom/server";
 
 interface IRenderProps {
   path: string;
@@ -10,7 +10,7 @@ interface IRenderProps {
 export const render = ({ path }: IRenderProps) => {
   return ReactDOMServer.renderToString(
     <StaticRouter location={path}>
-      <Router />
+			<Router />
     </StaticRouter>
   );
 };
