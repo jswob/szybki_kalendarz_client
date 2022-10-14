@@ -1,15 +1,14 @@
-import { Box, Container, Typography, Link as MuiLink } from '@mui/material';
-import { useLocation } from 'react-router-dom';
-// import { ReactComponent as GoogleLogo } from '../assets/google.svg';
-import { getGoogleUrl } from '../utils/getGoogleUrl';
+import { useContext } from "react";
+import { UserContext } from "../contexts/user-context";
 
 const LoginPage = () => {
-  const location = useLocation();
-  let from = ((location.state as any)?.from?.pathname as string) || '/';
-
+	const {user} = useContext(UserContext);
+	console.log(user);
   return (
 		<div>
 			<h1>Szybki Kalendarz!</h1>
+
+			<span>{user?.email}</span> - <span>{user?.accountType}</span>
 		</div>
   );
 };
