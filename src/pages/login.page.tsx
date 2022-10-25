@@ -3,7 +3,7 @@ import { UserContext } from "../contexts/user-context";
 
 const LoginPage = () => {
 	const {user} = useContext(UserContext);
-	console.log(user);
+
   return (
 		<div>
 			<h1>Szybki Kalendarz!</h1>

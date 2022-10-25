@@ -21,8 +21,6 @@ const SignInPage = () => {
 		},
 	]
 
-	console.log(user, isAuthenticated);
-
   return (
 		<div>
 			<ul>
