@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-import { useLocation } from 'react-router-dom';
 import { UserContext } from '../contexts/user-context';
 
 interface AuthLink {
