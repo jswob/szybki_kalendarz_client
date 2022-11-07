@@ -22,6 +22,8 @@ const LoginPage = () => {
 
 			<span>{user?.email}</span> - <span>{user?.accountType}</span>
 
+			<br />
+
 			<button onClick={signOut}>
 				Wyloguj się
 			</button>
@@ -30,4 +32,3 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
-
